@@ -1,19 +1,22 @@
 from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api
+from dotenv import load_dotenv
 
 from models.models import db
 from views.about_project_view import ProjectSection
 from views.main_section_view import MainSection
 from views.team_section_view import TeamSection
+import os
 
 app = Flask(__name__)
 
-db_host = 'parameters_database'
-db_port = 5432
-db_name = 'PARAMETER_DB'
-db_password = 'PARAMETER_PASSWORD_ULTA_SECRETO'
-db_user = 'USER_PARAMETER_DB'
+loaded = load_dotenv('.env')
+db_host = os.environ.get("DB_HOST")
+db_port = os.environ.get("DB_PORT")
+db_user = os.environ.get("DB_USER")
+db_password = os.environ.get("DB_PASSWORD")
+db_name = os.environ.get("DB_NAME")
 
 connection_string = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 app.config['SQLALCHEMY_DATABASE_URI'] = connection_string
