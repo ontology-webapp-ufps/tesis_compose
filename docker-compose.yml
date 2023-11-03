@@ -9,8 +9,10 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
     ports:
       - "8105:80"
+      - "8106:443"
     networks:
       - app_net
       - front_net
