@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Acerca del proyecto</h1>
+
+    <br>
+
+    <div class="cards-container">
+        <div class="card" *ngFor="let item of parameters">
+            <h1>{{item.content_title}}</h1>
+            <p>{{item.content}}</p>
+        </div>
+    </div>
+
+
+    <h1>¿Quieres usar al buscador ontologico?</h1>
+    <div class="container-button">
+        <button type="submit" (click)="redirectLogin()">Ingresar</button>
+    </div>
+
+</div>

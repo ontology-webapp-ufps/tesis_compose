@@ -1,0 +1,12 @@
+<section class="index-page">
+  <div [ngSwitch]="formType" class="forms-template__element">
+    <app-login *ngSwitchCase="0">
+    </app-login>
+
+    <app-register *ngSwitchCase="1">
+    </app-register>
+
+    <p *ngSwitchDefault>Page not found</p>
+  </div>
+
+</section>

@@ -1,0 +1,120 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    transition: 1200ms;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 320px) {
+    .pictures-container {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .pictures-container {
+        display: flex;
+        width: 100%;
+    }
+
+    #slide-1,
+    #slide-2,
+    #slide-3 {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        gap: 75%;
+        align-items: center;
+    }
+
+    .slide1 {
+        background-image: url('/auth/assets/login_1.jpg');
+    }
+
+    .slide2 {
+        background: url('/auth/assets/login_2.jpg');
+    }
+
+    .slide3 {
+        background: url('/auth/assets/login_3.jpg');
+    }
+
+    .slides {
+        cursor: pointer;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        height: 100vh;
+    }
+
+    .slides>div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center center;
+        transition: transform 0.5s;
+        display: flex;
+    }
+
+    .carrousel_prev {
+        background: url('/auth/assets/icons/back.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 2.5rem;
+        border-radius: 50%;
+        width: 2.3rem;
+        height: 2.3rem;
+        transition: 500ms;
+    }
+
+    .carrousel_prev:hover,
+    .carrousel_next:hover {
+        transform: scale(1.1);
+    }
+
+    .carrousel_next {
+        background: url('/auth/assets/icons/next.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        background-size: 2.5rem;
+        border-radius: 50%;
+        width: 2.3rem;
+        height: 2.3rem;
+        transition: 500ms;
+    }
+
+    .slides::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slides::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .slides>div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center center;
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pictures-container>a:focus {
+        background: rgb(255, 255, 255);
+    }
+}

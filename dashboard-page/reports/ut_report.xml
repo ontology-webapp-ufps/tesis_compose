@@ -1,0 +1,23 @@
+<testExecutions version="1">
+  <file path="src/app/core/services/user-service/user-service.spec.ts">
+    <testCase name="UserService Debe crearse correctamente" duration="2"/>
+  </file>
+  <file path="src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="32"/>
+    <testCase name="AppComponent should have as title 'dashboard'" duration="6"/>
+  </file>
+  <file path="src/app/components/footer/footer.component.spec.ts">
+    <testCase name="FooterComponent should create" duration="7"/>
+  </file>
+  <file path="src/app/components/header/header.component.spec.ts">
+    <testCase name="HeaderComponent should create" duration="10"/>
+  </file>
+  <file path="src/app/core/services/storage-service/storage-service.spec.ts">
+    <testCase name="StorageService Debe deber el current token" duration="1"/>
+    <testCase name="StorageService Debe crearse correctamente" duration="1"/>
+    <testCase name="StorageService Debe deber el current session" duration="1"/>
+    <testCase name="StorageService Debe realizar un logout de la aplicación" duration="1"/>
+    <testCase name="StorageService Debe validar si el usuario se ha autenticado" duration="1"/>
+    <testCase name="StorageService Debe deber el current user" duration="1"/>
+  </file>
+</testExecutions>

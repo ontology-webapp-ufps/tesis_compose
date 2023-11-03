@@ -1,0 +1,30 @@
+.container {
+    padding: 5rem 0 2rem;
+    background-color: rgb(10, 50, 100);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    color: white;
+    justify-content: center;
+}
+
+.container__info {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.container img {
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+}
+
+.container p {
+    margin: 0.5rem 0;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}

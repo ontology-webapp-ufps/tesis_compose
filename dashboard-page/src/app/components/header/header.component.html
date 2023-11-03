@@ -1,0 +1,12 @@
+<div class="header_container">
+    <nav class="navbar">
+        <p class="navbar-brand">UFPS - GIA</p>
+
+        <div class="navbar-options">
+            <button class="navbar-button" (click)="searchPage()"> Home </button>
+            <button class="navbar-button" *ngIf="this.role === 1" (click)="userPage()"> User </button>
+            <button class="navbar-button" *ngIf="this.role === 1" (click)="ontologyPage()"> Ontology </button>
+            <button class="navbar-button" (click)="logout()"> Logout </button>
+        </div>
+    </nav>
+</div>

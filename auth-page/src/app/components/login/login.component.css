@@ -1,0 +1,227 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    transition: 1200ms;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    color: rgb(10, 50, 100);
+    padding-top: 1.25rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+    .main-container {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .login-container {
+        width: 300px;
+        height: 550px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-rows: 4fr 1fr 3fr;
+        overflow: hidden;
+    }
+
+    .item-1-logo {
+        width: 230px;
+        background: url("/auth/assets/logo.jpg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .inputs-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .button-container {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        gap: 10%;
+    }
+
+    footer {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #1c77f7;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .text-register {
+        margin-top: 7%;
+        color: white;
+        font-size: 16px;
+    }
+
+    .footer-register {
+        display: none;
+    }
+
+    .register-button {
+        margin-top: 3%;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1c77f7;
+        background-color: #ffffff;
+        border-radius: 15px;
+        border: none;
+        width: 200px;
+        height: 40px;
+        transition: 500ms;
+        cursor: pointer;
+    }
+
+    .login-button:hover,
+    .register-button:hover {
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+            rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+            rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        background: url("/auth/assets/icons/2.png");
+        width: 100%;
+        display: grid;
+        gap: 5px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .login-container {
+        border-radius: 30px;
+        width: 430px;
+        height: 580px;
+        grid-template-rows: 4fr 1fr 4fr;
+        background-color: #ffffff;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    }
+
+    .item-1-logo {
+        width: 250px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #1c77f7;
+        border-radius: 15px;
+        border: none;
+        width: 200px;
+        height: 40px;
+        transition: 500ms;
+        cursor: pointer;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-container {
+        background: none;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .login-container {
+        border-radius: 30px;
+        width: auto;
+        height: 100vh;
+        grid-template-rows: 3fr 1fr 4fr;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .item-1-logo {
+        width: 300px;
+    }
+
+    .inputs-container {
+        gap: 25px;
+    }
+
+    .button-container {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footer-register {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:  rgb(10, 50, 100);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .text-register {
+        margin-top: 10%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-container {
+        height: 100%;
+    }
+
+    .login-container {
+        border-radius: 30px;
+    }
+
+    .item-1-logo {
+        width: 400px;
+    }
+
+    .button-container {
+        width: 100%;
+        gap: 0;
+    }
+
+    .text-register {
+        margin-top: 7%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .main-container {
+        grid-template-columns: 3fr 1fr;
+    }
+}

@@ -1,0 +1,721 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/clininf/covid19"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/clininf/covid19">
+    <Prefix name="" IRI="http://www.semanticweb.org/clininf/covid19"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OWLClass_0000000033"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000003"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000011"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000051"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000052"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000001"/>
+        <Class IRI="#OWLClass_0000000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000002"/>
+        <Class IRI="#OWLClass_0000000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000003"/>
+        <Class IRI="#OWLClass_0000000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000005"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000006"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000008"/>
+        <Class IRI="#OWLClass_0000000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000009"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000010"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000011"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000012"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000013"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000015"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000016"/>
+        <Class IRI="#OWLClass_0000000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000018"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000019"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000020"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000021"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000022"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000023"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000024"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000025"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000026"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000027"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000028"/>
+        <Class IRI="#OWLClass_0000000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000030"/>
+        <Class IRI="#OWLClass_0000000029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000031"/>
+        <Class IRI="#OWLClass_0000000029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000032"/>
+        <Class IRI="#OWLClass_0000000029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OWLClass_0000000033"/>
+        <Class IRI="#OWLClass_0000000029"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000000</IRI>
+        <Literal xml:lang="en">semantic-tag</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000003</IRI>
+        <Literal xml:lang="en">has_exact_synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000004</IRI>
+        <Literal xml:lang="en">SCTID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000011</IRI>
+        <Literal xml:lang="en">TPP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000051</IRI>
+        <Literal xml:lang="en">Read2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLAnnotationProperty_0000000052</IRI>
+        <Literal xml:lang="en">CTv3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000001</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000001</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1300721000000109</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000001</IRI>
+        <Literal xml:lang="en">COVID-19 confirmed by laboratory test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000002</IRI>
+        <Literal>Substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240391000000107</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000002</IRI>
+        <Literal xml:lang="en">Antigen of severe acute respiratory syndrome coronavirus 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000003</IRI>
+        <Literal>Substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240411000000107</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000003</IRI>
+        <Literal xml:lang="en">Ribonucleic acid of severe acute respiratory syndrome coronavirus 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000004</IRI>
+        <Literal xml:lang="en">probable COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000005</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240751000000100</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000005</IRI>
+        <Literal xml:lang="en">COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000006</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1300731000000106</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000006</IRI>
+        <Literal xml:lang="en">COVID-19 confirmed using clinical diagnostic criteria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000007</IRI>
+        <Literal xml:lang="en">definite COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000008</IRI>
+        <Literal>Clinical finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240581000000104</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000008</IRI>
+        <Literal xml:lang="en">SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) detected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000009</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000009</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240561000000108</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000009</IRI>
+        <Literal xml:lang="en">Encephalopathy caused by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000010</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000010</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240571000000101</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000010</IRI>
+        <Literal xml:lang="en">Gastroenteritis caused by severe acute respiratory syndrome coronavirus 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000011</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000011</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240531000000103</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000011</IRI>
+        <Literal xml:lang="en">Myocarditis caused by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000012</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240521000000100</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000012</IRI>
+        <Literal xml:lang="en">Otitis media caused by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000013</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000013</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240551000000105</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000013</IRI>
+        <Literal>Pneumonia caused by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000013</IRI>
+        <Literal xml:lang="en">Pneumonia caused by SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000015</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000015</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240541000000107</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000015</IRI>
+        <Literal xml:lang="en">Infection of upper respiratory tract caused by severe acute respiratory syndrome coronavirus 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000016</IRI>
+        <Literal>Disorder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">186747009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000016</IRI>
+        <Literal xml:lang="en">Coronavirus infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000017</IRI>
+        <Literal xml:lang="en">possible COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000018</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000018</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240761000000102</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000018</IRI>
+        <Literal xml:lang="en">Suspected COVID-19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000019</IRI>
+        <Literal>procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240451000000106</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000019</IRI>
+        <Literal xml:lang="en">Telephone consultation for suspected severe acute respiratory syndrome coronavirus 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000020</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000020</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">700217006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000020</IRI>
+        <Literal xml:lang="en">Suspected coronavirus infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000021</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000021</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240431000000104</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000021</IRI>
+        <Literal xml:lang="en">Exposure to SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000022</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000022</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240441000000108</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000022</IRI>
+        <Literal xml:lang="en">Close exposure to SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) infection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000023</IRI>
+        <Literal>Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000023</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240471000000102</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000023</IRI>
+        <Literal xml:lang="en">Measurement of severe acute respiratory syndrome coronavirus 2 antigen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000024</IRI>
+        <Literal>Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000024</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240511000000106</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000024</IRI>
+        <Literal xml:lang="en">Detection of SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) using polymerase chain reaction technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000025</IRI>
+        <Literal>Procedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000025</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1320971000000102</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000025</IRI>
+        <Literal xml:lang="en">Taking of swab for SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000026</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000026</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321031000000105</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000026</IRI>
+        <Literal xml:lang="en">Self-taken swab for SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) completed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000027</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000027</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321041000000101</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000027</IRI>
+        <Literal xml:lang="en">Self-taken swab for SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) offered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000028</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000028</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321051000000103</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000028</IRI>
+        <Literal xml:lang="en">Swab for SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) taken by healthcare professional</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000029</IRI>
+        <Literal xml:lang="en">Excluded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000030</IRI>
+        <Literal>Clinical finding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000030</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1240591000000102</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000030</IRI>
+        <Literal xml:lang="en">SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) not detected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000031</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000031</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321111000000101</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000031</IRI>
+        <Literal xml:lang="en">COVID-19 excluded by laboratory test</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000032</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000032</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321101000000103</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000032</IRI>
+        <Literal xml:lang="en">COVID-19 excluded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000000"/>
+        <IRI>#OWLClass_0000000033</IRI>
+        <Literal>Situation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#OWLAnnotationProperty_0000000004"/>
+        <IRI>#OWLClass_0000000033</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1321121000000107</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OWLClass_0000000033</IRI>
+        <Literal xml:lang="en">COVID-19 excluded using clinical diagnostic criteria</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

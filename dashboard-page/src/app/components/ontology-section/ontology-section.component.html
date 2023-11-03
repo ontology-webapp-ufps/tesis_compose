@@ -1,0 +1,90 @@
+<div class="section-container"> 
+        
+    <h2 *ngIf="this.isAuthorized">No estas autorizado para ver esta consulta</h2>
+        
+    <div *ngIf="!this.isAuthorized && !this.isAddOntology">
+        <div>
+            <h1>Sección de Administración ontologías</h1>
+            <br>
+            <p>En esta sección podrá administrar todo lo relacionado a las ontologías cargadas en el sistema, recuerde que toda acción que sea completada es irreversible en el sistema, por favor tenga cuidado.</p>
+            <br>
+            <div class="button-container-form">
+                <app-secundary-button
+                    style="width: 100%;"
+                    [textButton]="'Añadir ontología'"
+                    [isEnabled]="true"
+                    (isClicked)="actionButton()"
+                ></app-secundary-button>
+            </div>
+            <br>
+        </div> 
+        <div class="section-data">
+            <hr>
+            <div class="section-data__title">
+                <div><p><strong>Ontología</strong></p></div>   
+                <div><p><strong>Acciones</strong></p></div> 
+            </div>
+            <hr> 
+            <div class="section-data__content" *ngFor="let ontology of this.ontologies">
+                <div class="section-data__content--information">
+                    <p>{{ontology}}</p>
+                </div>
+                <div class="section-data__content--actions">
+                    <button class="button-action" (click)="deleteOntology(ontology)"><img src="/dashboard/assets/trash.png"/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!this.isAuthorized && this.isAddOntology">
+        <h1>Añadir ontología</h1>
+        <br>
+        <p>Ingrese los parametros requeridos para añadir la ontología</p>
+        <br>
+        <hr>
+        <div class="form-container">
+            <br>
+            <p>¿Seleccione tipo de ontología? &nbsp;&nbsp; 
+                &nbsp;Web <input (click)="changeType(true)" style="width: 2rem; color:blue" type="radio" id="changeType" name="drone" value="changeType" checked/>
+                &nbsp;Local <input (click)="changeType(false)" style="width: 2rem;" type="radio" id="changeType" name="drone" value="changeType"/>
+            </p>    
+            <br>
+            <div class="inputs-container" *ngIf="this.isWebOntology">
+                <p class="input-label">Url ontología</p>
+                <app-input 
+                    [inputType]="'text'" 
+                    [placeHolder]="'Ingrese la onotlogía'"
+                    [control]="ontologyForm.controls['path']"
+                    [validateText]="'Debes ingresar una ontología'"
+                    autocomplete="off">
+                </app-input>
+            </div>
+
+            <div class="inputs-container" *ngIf="!this.isWebOntology">
+                <p class="input-label">Selecciona el archivo de ontología</p>
+                <app-input 
+                    [inputType]="'file'" 
+                    [placeHolder]="'Ingrese la onotlogía'"
+                    [control]="ontologyForm.controls['path']"
+                    [validateText]="'Debes ingresar una ontología'"
+                    autocomplete="off">
+                </app-input>
+            </div>
+
+            <div class="button-container">
+                <app-secundary-button
+                    [textButton]="'Volver sin guardar'"
+                    [isEnabled]="true"
+                    (isClicked)="addOntology(false)"
+                ></app-secundary-button>
+                <div></div>
+                <app-primary-button
+                    [textButton]="'Guardar cambios'"
+                    [isEnabled]="ontologyForm.valid && !this.loader"
+                    (isClicked)="addOntology(true)"
+                ></app-primary-button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,11 @@
+<div class="container">
+
+    <div [ngSwitch]="this.page">
+        <app-search-section *ngSwitchCase="0"></app-search-section>
+        <app-user-section *ngSwitchCase="1" (sessionChange)="doLogout($event)"></app-user-section>
+        <app-ontology-section *ngSwitchCase="2" (sessionChange)="doLogout($event)"></app-ontology-section>
+
+        <h1 *ngSwitchDefault>Ha ocurrido un error insperado</h1>
+    </div>
+
+</div>

@@ -1,0 +1,5 @@
+<app-header (page)="changePage($event)"></app-header>
+
+<app-dashboard-section [page]="this.page" (sessionChange)="logout()"></app-dashboard-section>
+
+<app-footer></app-footer>

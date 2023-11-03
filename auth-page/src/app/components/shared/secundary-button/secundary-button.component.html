@@ -1,0 +1,12 @@
+<div class="button_container">
+  <button
+    *ngIf="isEnabled"
+    class="secundary_button__enabled"
+    (click)="isClickedButton()"
+  >
+    {{ textButton }}
+  </button>
+  <button *ngIf="!isEnabled" class="secundary_button__disabled">
+    {{ textButton }}
+  </button>
+</div>

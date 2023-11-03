@@ -1,0 +1,20 @@
+<div class="input-container">
+  <input class="input"
+  [ngStyle]="{
+    'box-shadow':
+      formControl.value === ''
+        ? 'box-shadow: rgba(100, 100, 111, 0.2);'
+        : formControl.valid
+        ? '1px 1px 7.5px #1b5e20'
+        : '1px 1px 7.5px #b71c1c'
+  }"
+    type="{{ inputType }}"
+    placeholder="{{ placeHolder }}"
+    [formControl]="formControl"
+    style="background-image: url('{{ background }}')"
+  />
+
+  <p *ngIf="!formControl.valid && formControl.value !== ''">
+    {{ validateText }}
+  </p>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Nuestro equipo</h1>
+
+    <main>
+        <div class="venues-items" *ngFor="let item of teamMembers">
+            <img class="venue-image-container" src="{{item.img}}" alt="">
+            <div class="venue-info">
+                <p>{{item.name}}</p>
+                <a href="mailto:{{item.email}}">{{item.email}}</a>
+                <p>{{item.role}}</p>
+            </div>
+        </div>
+    </main>
+
+</div>

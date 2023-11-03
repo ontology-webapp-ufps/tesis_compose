@@ -1,0 +1,103 @@
+<div class="section-container">
+    <h2 *ngIf="this.isAuthorized">No estas autorizado para ver esta consulta</h2>
+    
+    <div *ngIf="!this.isAuthorized && !this.isEditUser">
+        <h1>Sección de usuarios</h1>
+        <br>
+        <p>En esta sección podrá administrar todo lo relacionado a los usuarios inscritos en el sistema, recuerde que toda acción que sea completada es irreversible en el sistema, por favor tenga cuidado.</p>
+        <br>
+        <div class="section-data">
+            <hr>
+            <div class="section-data__title">
+                <div><p><strong>Nombre</strong></p></div>    
+                <div><p><strong>Correo</strong></p></div>     
+                <div><p><strong>Acciones</strong></p></div> 
+            </div>
+            <hr> 
+            <div class="section-data__content" *ngFor="let user of this.users">
+                <div class="section-data__content--information">
+                    <p>{{user.name}}</p>
+                </div>
+                <div class="section-data__content--information">
+                    <p>{{user.email}}</p>
+                </div>
+                <div class="section-data__content--actions">
+                   <button class="button-action" (click)="updateUser(user)"><img src="/dashboard/assets/edit.png"/></button>
+                   <button class="button-action" (click)="deleteUser(user.id)"><img src="/dashboard/assets/trash.png"/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!this.isAuthorized && this.isEditUser">
+        <h1>Editar usuario</h1>
+        <br>
+        <p>Modifique los datos que desea editar del usuario</p>
+        <br>
+        <br>
+        <div class="form-container">
+            <div class="inputs-container">
+                <p class="input-label">Nombre:</p>
+                <app-input 
+                    [inputType]="'text'" 
+                    [placeHolder]="'Ingrese el nombre del usuario'"
+                    [control]="editUser.controls['name']"
+                    [validateText]="'Debes ingresar un correo electronico valido'"
+                    autocomplete="off">
+                </app-input>
+                <br>
+
+                <p class="input-label">Correo:</p>
+                <app-input 
+                    [inputType]="'email'" 
+                    [placeHolder]="'ingrese el correo del usuario'" 
+                    [control]="editUser.controls['email']" 
+                    [validateText]="'La contraseña debe contener entre 4 y 32 caracteres'"
+                    autocomplete="off">
+                </app-input>
+                <br>
+
+                <p class="input-label">Rol:</p>
+                <app-input 
+                    [inputType]="'number'" 
+                    [placeHolder]="'Ingrese el rol del usuario'" 
+                    [control]="editUser.controls['rol']" 
+                    [validateText]="'El rol debe ser 1 (Adminisrador) o 2(Consultor)'"
+                    autocomplete="off">
+                </app-input>
+                <br>
+
+                <p>¿Desea modificar la contraseña? &nbsp;&nbsp; 
+                    &nbsp;Sí <input (click)="changePassword(true)" style="width: 2rem; color:blue" type="radio" id="changePassword" name="drone" value="changePassword"/>
+                    &nbsp;No <input (click)="changePassword(false)" style="width: 2rem;" type="radio" id="changePassword" name="drone" value="changePassword" checked/>
+                </p>    
+                <br>
+                
+                <p class="input-label" *ngIf="this.isChangePassword">Contraseña:</p>
+                <app-input 
+                    *ngIf="this.isChangePassword"
+                    [inputType]="'password'" 
+                    [placeHolder]="'Ingrese el rol del usuario'" 
+                    [control]="editUser.controls['newPassword']" 
+                    [validateText]="'Ingrese una contraseña entre 4 y 32 caracteres'"
+                    autocomplete="off">
+                </app-input>
+                <br *ngIf="this.isChangePassword">
+
+                <div class="button-container">
+                    <app-secundary-button
+                        [textButton]="'Volver sin guardar'"
+                        [isEnabled]="true"
+                        (isClicked)="actionButton(false)"
+                    ></app-secundary-button>
+                    <div></div>
+                    <app-primary-button
+                        [textButton]="'Guardar cambios'"
+                        [isEnabled]="editUser.valid"
+                        (isClicked)="actionButton(true)"
+                    ></app-primary-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

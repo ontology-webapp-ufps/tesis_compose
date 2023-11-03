@@ -1,0 +1,45 @@
+<section class="main-container">
+    <app-slides></app-slides>
+    <!-- Sección de login color blanco -->
+    <div class="login-container">
+        <div class="item-1-logo"></div>
+        <h1 class="title">Buscador Ontologico</h1>
+        <div class="item-2-inputs">
+            <div class="inputs-container">
+                <app-input 
+                    [inputType]="'text'" 
+                    [placeHolder]="'Username / email'"
+                    [background]="'/auth/assets/icons/dato.png'" 
+                    [control]="loginForm.controls['email']"
+                    [validateText]="'Debes ingresar un correo electronico valido'"
+                    autocomplete="off">
+                </app-input>
+                <app-input 
+                    [inputType]="'password'" 
+                    [placeHolder]="'Password'" 
+                    [background]="'/auth/assets/icons/acceso.png'"
+                    [control]="loginForm.controls['password']" 
+                    [validateText]="'La contraseña debe contener entre 4 y 32 caracteres'"
+                    autocomplete="off">
+                </app-input>
+
+                <div class="button-container">
+                    <app-primary-button
+                        [textButton]="'Ingreso'"
+                        [isEnabled]="loginForm.valid && !loader"
+                        (isClicked)="actionButton()"
+                    ></app-primary-button>
+                    <app-secundary-button
+                        [textButton]="'Registro'"
+                        [isEnabled]="true"
+                        (isClicked)="actionButton()"
+                    ></app-secundary-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    ChangeIt();
+</script>

@@ -1,0 +1,69 @@
+<div class="section-container"> 
+    <div>
+        <h1>Sección de consultas</h1>
+        <br>
+        <p>Según los parametros de busqueda encontraremos tu ontología en nuestros registros, ten paciencia las consultas pueden tardar.</p>
+        <br>
+    </div> 
+
+    <div class="search-params">
+        <div class="inputs-container">
+            <div class="mr-1rem">
+                <p class="input-label">Criterio busqueda:</p>
+                <app-input 
+                    [inputType]="'text'" 
+                    [placeHolder]="'Ingrese el criterio de busqueda'"
+                    [control]="searchParams.controls['criteria']"
+                    [validateText]="'Debes ingresar un criterio valido'"
+                    autocomplete="off">
+                </app-input>
+            </div>
+            <div class="mr-1rem">
+                <p class="input-label">Format:</p>
+                <app-input 
+                    [inputType]="'text'" 
+                    [placeHolder]="'Seleccione formato'"
+                    [control]="searchParams.controls['format']"
+                    [validateText]="'Debes ingresar un correo electronico valido'"
+                    autocomplete="off">
+                </app-input>
+            </div>
+            <div>
+                <p class="input-label">Accuracy:</p>
+                <app-input 
+                    [inputType]="'number'" 
+                    [placeHolder]="'Exactitud'"
+                    [control]="searchParams.controls['accuracy']"
+                    [validateText]="'Debes ingresar un correo electronico valido'"
+                    autocomplete="off">
+                </app-input>
+            </div>
+        </div>
+
+        <div class="button-container-form">
+            <app-primary-button
+                style="width: 100%;"
+                [textButton]="'Realizar consulta de ontologías'"
+                [isEnabled]="searchParams.valid && !this.loader"
+                (isClicked)="actionButton()"
+            ></app-primary-button>
+        </div>
+    </div>
+    <hr>
+
+    <div *ngIf="this.loader">
+        <br>
+        <p>Estamos realizando la consulta, espera por favor.</p>
+        <br>
+    </div>
+
+    <div class="search_response" *ngIf="!this.loader">
+        <br>
+        <p *ngIf="this.result === undefined">Aún no se han realizaodo consultas.</p>
+        <br>
+        <p  *ngIf="this.result !== undefined"><strong>Estado de consulta:</strong>{{this.result.message}}</p>
+        <br>
+        <p  *ngIf="this.result !== undefined"><strong>Ontología:</strong> {{this.result.result}}</p>
+    </div>
+
+</div>
