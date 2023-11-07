@@ -8,11 +8,11 @@ services:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
+      - "--providers.file.watch=true"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
     ports:
-      - "8105:80"
-      - "8106:443"
+      - "8105:443"
     networks:
       - app_net
       - front_net
@@ -41,7 +41,8 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.index-page-app.rule=(PathPrefix(`/index`))"
+      - "traefik.http.routers.index-page-app.entrypoints=websecure"
+      - "traefik.http.routers.index-page-app.rule=(PathPrefix(`/index`) && PathPrefix(`/`))"
       - "traefik.http.services.index-page-app.loadbalancer.server.port=4200"
     networks:
       - front_net
@@ -58,6 +59,7 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
+      - "traefik.http.routers.auth-page-app.entrypoints=websecure"
       - "traefik.http.routers.auth-page-app.rule=(PathPrefix(`/auth`))"
       - "traefik.http.services.auth-page-app.loadbalancer.server.port=4200"
     networks:
@@ -75,6 +77,7 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
+      - "traefik.http.routers.dashboard-page-app.entrypoints=websecure"
       - "traefik.http.routers.dashboard-page-app.rule=(PathPrefix(`/dashboard`))"
       - "traefik.http.services.dashboard-page-app.loadbalancer.server.port=4200"
     networks:
@@ -92,6 +95,7 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
+      - "traefik.http.routers.users-app.entrypoints=websecure"
       - "traefik.http.routers.users-app.rule=(PathPrefix(`/users`))"
       - "traefik.http.routers.users-app.middlewares=users-stripprefix"
       - "traefik.http.middlewares.users-stripprefix.stripprefix.prefixes=/users/"
@@ -112,6 +116,7 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
+      - "traefik.http.routers.parameters-app.entrypoints=websecure"
       - "traefik.http.routers.parameters-app.rule=(PathPrefix(`/parameters`))"
       - "traefik.http.routers.parameters-app.middlewares=parameters-stripprefix"
       - "traefik.http.middlewares.parameters-stripprefix.stripprefix.prefixes=/parameters/"
@@ -132,6 +137,7 @@ services:
           - node.role == manager
     labels:
       - "traefik.enable=true"
+      - "traefik.http.routers.ontologies-app.entrypoints=websecure"
       - "traefik.http.routers.ontologies-app.rule=(PathPrefix(`/ontologies`))"
       - "traefik.http.routers.ontologies-app.middlewares=ontologies-stripprefix"
       - "traefik.http.middlewares.ontologies-stripprefix.stripprefix.prefixes=/ontologies/" 
