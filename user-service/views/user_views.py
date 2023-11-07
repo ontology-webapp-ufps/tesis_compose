@@ -57,7 +57,6 @@ class ViewReport(Resource):
     @jwt_required()
     def get(self):
         users = User.query.all()
-        db.session.remove()
         return [user_schema.dump(user) for user in users]
     
 class ViewDelete(Resource):
