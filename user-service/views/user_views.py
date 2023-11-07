@@ -23,6 +23,7 @@ class ViewSingIn(Resource):
                 )
                 db.session.add(new_user)
                 db.session.commit()
+                db.session.remove()
                 return {"api_code": "1", "mensaje": "Usuario registrado exitosamente."}
             else: 
                 return {"api_code": "2", "mensaje": "El correo electronico ya ha sido registrado previamente."}
@@ -36,6 +37,7 @@ class ViewLogin(Resource):
             contrasena = hashlib.md5(request.json["contrasena"].encode('utf-8')).hexdigest()
 
             login_user = User.query.filter(User.email==email, User.contrasena==contrasena).first()
+            db.session.remove()
         
             if login_user is None:
                 return {"api_code": "2", "mensaje": "Login fallido, credenciales incorrectas."}
@@ -55,6 +57,7 @@ class ViewReport(Resource):
     @jwt_required()
     def get(self):
         users = User.query.all()
+        db.session.remove()
         return [user_schema.dump(user) for user in users]
     
 class ViewDelete(Resource):
@@ -68,6 +71,7 @@ class ViewDelete(Resource):
             else:         
                 db.session.delete(user_query)        
                 db.session.commit()
+                db.session.remove()
                 return {"api_code": "1", "mensaje": "Usuario eliminado exitosamente."}
         except:
             return {"api_code": "2", "mensaje": "El request no tiene la estructura correcta."}
@@ -97,9 +101,7 @@ class ViewUpdate(Resource):
                     user_query.rol = Rol.CONSULTOR
 
                 db.session.commit()
+                db.session.remove()
                 return {"api_code": "1", "mensaje": "Usuario actualizado exitosamente.", "user": user_schema.dump(user_query)}
         except:
             return {"api_code": "2", "mensaje": "El request no tiene la estructura correcta."}
-
-            {
-}

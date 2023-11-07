@@ -27,6 +27,8 @@ class ProjectSection(Resource):
                 update_param.content = data['content']
                 db.session.add(update_param)
                 db.session.commit()
+                db.session.remove()
+
                 count+=1
 
             return {"api_code": "1", "mensaje": "Actualización de parametros exitosa."}

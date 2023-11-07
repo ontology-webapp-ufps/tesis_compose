@@ -35,6 +35,8 @@ class TeamSection(Resource):
                 db.session.add(new_param)
 
             db.session.commit()
+            db.session.remove()
+
             return {"api_code": "1", "mensaje": "Actualización de parametros exitosa."}
         else:
             return {"api_code": "2", "mensaje": "No estas autorizado para realizar la petición."}

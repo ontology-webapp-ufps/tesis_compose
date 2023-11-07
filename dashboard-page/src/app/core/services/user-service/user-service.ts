@@ -11,7 +11,7 @@ export class UserService {
   private SERVICE_URL: string;
 
   constructor(private http: HttpClient) {
-    this.SERVICE_URL = environment.user_service
+    this.SERVICE_URL = window.location.href.split('/dashboard')[0] + '/users';
   }
 
   getUsers(token: string): Observable<UserData[]> {

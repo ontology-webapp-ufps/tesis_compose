@@ -25,6 +25,7 @@ class MainSection(Resource):
 
             db.session.add(parameters)
             db.session.commit()
+            db.session.remove()
             
             return {"api_code": "1", "mensaje": "Actualización de parametros exitosa."}
         else:

@@ -11,7 +11,7 @@ export class OntologyService {
   private SERVICE_URL: string;
 
   constructor(private http: HttpClient) {
-    this.SERVICE_URL = environment.ontology_service;
+    this.SERVICE_URL = window.location.href.split('/dashboard')[0] + '/ontologies';
   }
 
   getFuentes(token: string): Observable<GetFuentesRs> {
